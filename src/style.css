@@ -1,0 +1,158 @@
+
+
+*{
+    font-family: Barlow;
+  }
+  /* backdrop-filter: blur(100px) */
+
+
+
+  .track{
+    border: #fff 1px solid;
+    width: fit-content;
+    margin: 40px;
+    position: absolute;
+    scale: .75;
+  }
+  .track_container{
+    padding: 10px 20px;
+
+  }
+  hr{
+    all: unset;
+  }
+  p{
+    font-size: 20px;
+    color: white;
+  }
+  .options_title{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  .options_title p{
+    font-weight: 600;
+    margin-left: 15px;
+  }
+
+  .options_btn{
+    padding: 15px 0;
+    margin-left: 8px;
+  }
+  .title_line{
+    background-color: white;
+    height: 2px;
+    width: 70px;
+   }
+  .option img{
+    width: 50px;
+    color: #DB240B;
+  }
+  .options{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttonStroke{
+    all: unset;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+    overflow:hidden;
+    transition: .15s;
+}
+.buttonStroke:hover {
+    border-color: white;
+    background-color: white;
+    color: black;
+}
+.advancedComponent input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.advancedComponent label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 40px;
+	height: 25px;
+	background: #1e1f22;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+.advancedComponent label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.3s;
+}
+
+.advancedComponent input:checked + label {
+	background: #DB240B;
+}
+
+.advancedComponent input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+.advancedComponent{
+    display: flex;
+    align-items: center;
+}
+.advancedComponent p{
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;
+}
+.customTracking{
+  color: white;
+  fill: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.dateAndTime{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.dateAndTime input{
+  color-scheme: dark;
+  scale: 1.2;
+  border: #fff 1px solid;
+  margin-left: 13px;
+  padding: 5px;
+}
+.dateAndTime button{
+  background-color: white;
+  color: black;
+}
+.submitAndLive{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.live p{
+  font-size: 20px;
+  color: #DB240B;
+  cursor: pointer;
+}
+
+
+.info{
+  display: none;
+  position: absolute;
+  color: white;
+  top: 10px;
+  right: 10px;
+}
